@@ -16,7 +16,9 @@ If you want to run the solution on other platforms, you can use the command `go 
 
 # Running Docker
 Build the docker image for go script using `docker build -t <image_name> -f /path/to/Dockerfile .`.
+
 Run the docker image using `docker run <image_name>`.
+
 Output will be logged to terminal.
 
 # Running Test
