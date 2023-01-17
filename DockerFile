@@ -1,0 +1,11 @@
+FROM golang:latest
+
+RUN go env -w GO111MODULE=off
+
+COPY . /go/src/test
+
+WORKDIR /go/src/test
+
+RUN go build -o test .
+
+CMD ["./test"]
