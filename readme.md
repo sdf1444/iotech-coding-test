@@ -15,8 +15,9 @@ Verify the output: Open the `output.json` file to verify that the output matches
 If you want to run the solution on other platforms, you can use the command `go build -o <executable_file> <main_file.go>` to build the solution for specific platforms like Windows, MacOS, etc.
 
 # Running Docker
-Build the docker image for go script using `docker build -t <image_name> -f /path/to/Dockerfile .`
-Run the docker image using `docker run <image_name>`
+Build the docker image for go script using `docker build -t <image_name> -f /path/to/Dockerfile .`.
+Run the docker image using `docker run <image_name>`.
+Output will be logged to terminal.
 
 # Running Test
 Run `go test` after building and running the solution. The test will either pass or fail.
