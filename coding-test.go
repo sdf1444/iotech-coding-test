@@ -31,6 +31,7 @@ func main() {
 	data := Data{}
 	output := Output{}
 	output.UUIDS = make([]string, 0)
+	fmt.Println("Parsing data from data.json")
 
 	// Parse data from data.json
 	file, err := ioutil.ReadFile("data.json")
