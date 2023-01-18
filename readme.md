@@ -22,4 +22,4 @@ Run the docker image using `docker run <image_name>`.
 Output will be logged to terminal.
 
 # Running Test
-Run `go test` after building and running the solution and if there is an `output.json` present. The test will either pass or fail.
+Run `go test` after building and running the solution and if there is an `output.json` present. The test will either pass or fail. This will validate if the solution written is correct or not.
