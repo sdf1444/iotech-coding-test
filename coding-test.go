@@ -46,14 +46,14 @@ func main() {
 	}
 
 	// Discard devices where timestamp is before current time
-	now := time.Now().Unix()
+	currentTime := time.Now().Unix()
 	for _, device := range data.Devices {
 		timestamp, err := strconv.ParseInt(device.Timestamp, 10, 64)
 		if err != nil {
 			fmt.Println("Error parsing timestamp:", err)
 			continue
 		}
-		if timestamp > now {
+		if timestamp > currentTime {
 			// Extract uuid from Info field
 			uuidRegex := regexp.MustCompile("[a-f0-9-]{36}")
 			uuid := uuidRegex.FindString(device.Info)
